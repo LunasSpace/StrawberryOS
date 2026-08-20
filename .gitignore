@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-gitcreds
-gitcreds.pub
-=======
+# C:
 # Prerequisites
 *.d
 
@@ -57,7 +54,7 @@ dkms.conf
 
 # debug information files
 *.dwo
->>>>>>> 5b3ad357cd30ce4e4e49d492ec2060179fbaf4bc
 
+# Github
 gitcreds
 gitcreds.pub
