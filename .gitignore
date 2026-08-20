@@ -58,3 +58,6 @@ dkms.conf
 # Github
 gitcreds
 gitcreds.pub
+
+# VSCode
+.vscode
