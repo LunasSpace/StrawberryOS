@@ -5,6 +5,7 @@ FLAGS equ 0x0 ; multiboot flags
 CHECKSUM equ -MAGIC_NUMBER ; calculate the checksum
 ; (magic number + checksum + flags should equal 0)
 
+KERNEL_STACK_SIZE equ 4096 ; stack size in bytes
 
 section .text ; start of the text (code) section
 align 4 ; the code must be 4 byte aligned
@@ -16,3 +17,10 @@ loader: ; the loader label (defined as entry point in linker script)
     mov eax, 0xCAFEBABE ; place the number 0xCAFEBABE in the register eax
 .loop:
     jmp .loop ; loop forever
+
+section .bss
+align 4
+kernel_stack:
+    resb KERNEL_STACK_SIZE
+
+mov esp, kernel_stack + KERNEL_STACK_SIZE
