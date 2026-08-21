@@ -62,6 +62,7 @@ gitcreds.pub
 # Local
 *.iso
 bochslog.txt
+qemu.log
 
 # VSCode
 .vscode/
