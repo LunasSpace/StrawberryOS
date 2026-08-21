@@ -9,3 +9,10 @@ section .text:
 align 4
     dd MAGIC_NUMBER
     dd FLAGS
+    dd CHECKSUM
+
+loader:
+    mov eax, 0x0CAFEBABE
+.loop:
+    jmp .loop
+    
