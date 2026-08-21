@@ -60,7 +60,7 @@ gitcreds
 gitcreds.pub
 
 # Local
-
+*.iso
 
 # VSCode
 .vscode/
