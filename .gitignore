@@ -60,4 +60,4 @@ gitcreds
 gitcreds.pub
 
 # VSCode
-.vscode
+/.vscode
