@@ -59,5 +59,8 @@ dkms.conf
 gitcreds
 gitcreds.pub
 
+# Local
+
+
 # VSCode
-/.vscode
+.vscode/
